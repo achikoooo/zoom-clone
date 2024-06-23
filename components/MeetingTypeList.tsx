@@ -67,8 +67,8 @@ const MeetingTypeList = () => {
       <HomeCard
         className='bg-orange-1'
         title='New Meeting'
-        desc='Start an instant meeting'
-        iconUrl='/icons/add-meeting.svg'
+        description='Start an instant meeting'
+        img='/icons/add-meeting.svg'
         handleClick={() => {
           setMeetingState('isInstantMeeting')
         }}
@@ -76,29 +76,29 @@ const MeetingTypeList = () => {
       <HomeCard
         className='bg-blue-1'
         title='schedule Meeting'
-        desc='Plan your meeting'
+        description='Plan your meeting'
         handleClick={() => {
           setMeetingState('isScheduleMeeting')
         }}
-        iconUrl='/icons/schedule.svg'
+        img='/icons/schedule.svg'
       />
       <HomeCard
         className='bg-purple-300'
         title='View Recordings'
-        desc='Check out your recordings'
+        description='Check out your recordings'
         handleClick={() => {
           setMeetingState('isJoiningMeeting')
         }}
-        iconUrl='/icons/recordings.svg'
+        img='/icons/recordings.svg'
       />
       <HomeCard
         className='bg-yellow-400'
         title='Join Meeting'
-        desc='Via inviation link'
+        description='Via inviation link'
         handleClick={() => {
           setMeetingState('isJoiningMeeting')
         }}
-        iconUrl='/icons/join-meeting.svg'
+        img='/icons/join-meeting.svg'
       />
       {!callDetails ? (
         <MeetingModal
